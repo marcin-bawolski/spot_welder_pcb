@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\work\git_playground\igbt\spot_welder\spot_welder\spot_welder.sch)
-    (date "19.06.2020 21:55:35")
+    (date "19.06.2020 22:16:07")
     (tool "Eeschema (5.0.2)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -80,7 +80,7 @@
       (tstamp 5EECFBA9))
     (comp (ref U1)
       (value Stm8S103F6_module)
-      (footprint Package_DIP:DIP-20_W7.62mm)
+      (footprint ebay_modules:DIP-20_600_ELL)
       (libsource (lib marcin_schematic) (part Stm8S103F6_module) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 5EED1B37))

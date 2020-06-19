@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 5)
+    (drawings 0)
     (tracks 265)
     (zones 0)
     (modules 20)
@@ -1107,12 +1107,6 @@
     (pad 10 thru_hole oval (at 11.43 7.62 270) (size 1.2 2) (drill 0.8) (layers *.Cu *.Mask)
       (net 27 /OPTO))
   )
-
-  (gr_line (start 182.88 69.85) (end 179.705 69.85) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 182.88 131.445) (end 182.88 69.85) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 92.075 131.445) (end 182.88 131.445) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 92.075 69.85) (end 92.075 131.445) (layer Edge.Cuts) (width 0.15))
-  (gr_line (start 179.705 69.85) (end 92.075 69.85) (layer Edge.Cuts) (width 0.15))
 
   (segment (start 139.521 103.312) (end 139.455 103.378) (width 0.65) (layer B.Cu) (net 1))
   (segment (start 141.621 103.312) (end 139.521 103.312) (width 0.65) (layer B.Cu) (net 1))

@@ -161,7 +161,7 @@ U 1 1 5EED1B37
 P 1350 2700
 F 0 "U1" H 1650 2968 50  0000 C CNN
 F 1 "Stm8S103F6_module" H 1650 2877 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm" H 1450 2450 50  0001 C CNN
+F 2 "ebay_modules:DIP-20_600_ELL" H 1450 2450 50  0001 C CNN
 F 3 "" H 1450 2450 50  0001 C CNN
 	1    1350 2700
 	1    0    0    -1  
@@ -305,15 +305,7 @@ F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSA02-123(Ver
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 4800 5400 4700
-Wire Wire Line
 	4400 2500 4400 4700
-Connection ~ 4400 4700
-Wire Wire Line
-	4400 4700 4400 4800
-Wire Wire Line
-	3300 4800 3300 4700
-Connection ~ 3300 4700
 Connection ~ 3450 2100
 Wire Wire Line
 	3450 2100 4400 2100
@@ -361,7 +353,6 @@ Entry Bus Bus
 	4550 5050 4650 5150
 Wire Wire Line
 	5400 2500 5400 4700
-Connection ~ 5400 4700
 Wire Wire Line
 	4950 2500 5400 2500
 Entry Wire Line
@@ -510,17 +501,6 @@ Text Label 4700 4800 0    50   ~ 0
 dp
 Wire Wire Line
 	3450 4700 3300 4700
-$Comp
-L Display_Character:KCSA02-123 U2
-U 1 1 5EED545F
-P 3000 4400
-F 0 "U2" H 3000 5067 50  0000 C CNN
-F 1 "KCSA02-123" H 3000 4976 50  0000 C CNN
-F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 3000 3800 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSA02-123(Ver.9A).pdf" H 2500 4875 50  0001 L CNN
-	1    3000 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3450 4700 3450 2500
 Text Label 2150 3500 0    50   ~ 0
@@ -655,4 +635,15 @@ Wire Bus Line
 	4550 4000 4550 5050
 Wire Bus Line
 	2450 2600 2450 5050
+$Comp
+L Display_Character:KCSA02-123 U2
+U 1 1 5EED545F
+P 3000 4400
+F 0 "U2" H 3000 5067 50  0000 C CNN
+F 1 "KCSA02-123" H 3000 4976 50  0000 C CNN
+F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 3000 3800 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSA02-123(Ver.9A).pdf" H 2500 4875 50  0001 L CNN
+	1    3000 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
