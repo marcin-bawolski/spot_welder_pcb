@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:spot_welder-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -170,8 +171,8 @@ $Comp
 L Device:Q_PNP_BEC Q1
 U 1 1 5EED1D00
 P 5000 2550
-F 0 "Q1" H 5191 2596 50  0000 L CNN
-F 1 "BSR20" H 5191 2505 50  0000 L CNN
+F 0 "Q1" H 4850 2700 50  0000 L CNN
+F 1 "BSR20" H 4850 2350 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5200 2650 50  0001 C CNN
 F 3 "~" H 5000 2550 50  0001 C CNN
 	1    5000 2550
@@ -180,23 +181,23 @@ $EndComp
 $Comp
 L Device:Q_PNP_BEC Q2
 U 1 1 5EED1D6A
-P 5950 2550
-F 0 "Q2" H 6141 2596 50  0000 L CNN
-F 1 "BSR20" H 6141 2505 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6150 2650 50  0001 C CNN
-F 3 "~" H 5950 2550 50  0001 C CNN
-	1    5950 2550
+P 5500 2550
+F 0 "Q2" H 5300 2700 50  0000 L CNN
+F 1 "BSR20" H 5350 2850 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5700 2650 50  0001 C CNN
+F 3 "~" H 5500 2550 50  0001 C CNN
+	1    5500 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Q_PNP_BEC Q3
 U 1 1 5EED1DB2
-P 6500 2550
-F 0 "Q3" H 6691 2596 50  0000 L CNN
-F 1 "BSR20" H 6691 2505 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6700 2650 50  0001 C CNN
-F 3 "~" H 6500 2550 50  0001 C CNN
-	1    6500 2550
+P 5950 2550
+F 0 "Q3" H 6141 2596 50  0000 L CNN
+F 1 "BSR20" H 6141 2505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6150 2650 50  0001 C CNN
+F 3 "~" H 5950 2550 50  0001 C CNN
+	1    5950 2550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -224,25 +225,20 @@ $EndComp
 $Comp
 L Device:R R3
 U 1 1 5EED22DA
-P 6300 3100
-F 0 "R3" V 6400 3000 50  0000 C CNN
-F 1 "1k" V 6400 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6230 3100 50  0001 C CNN
-F 3 "~" H 6300 3100 50  0001 C CNN
-	1    6300 3100
+P 5750 3050
+F 0 "R3" V 5850 2950 50  0000 C CNN
+F 1 "1k" V 5850 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5680 3050 50  0001 C CNN
+F 3 "~" H 5750 3050 50  0001 C CNN
+	1    5750 3050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4550 2550 4800 2550
 Wire Wire Line
-	4950 3550 5750 3550
+	4950 3550 5300 3550
 Wire Wire Line
-	5750 3550 5750 2550
-Wire Wire Line
-	5800 3650 6300 3650
-Connection ~ 6050 2350
-Wire Wire Line
-	6050 2350 6600 2350
+	5300 3550 5300 2550
 Wire Wire Line
 	5100 2300 5100 2350
 $Comp
@@ -278,33 +274,9 @@ F 3 "" H 2550 6250 50  0001 C CNN
 	1    2550 6250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Display_Character:KCSA02-123 U3
-U 1 1 5EED581A
-P 5750 4650
-F 0 "U3" H 5750 5317 50  0000 C CNN
-F 1 "KCSA02-123" H 5750 5226 50  0000 C CNN
-F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 5750 4050 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSA02-123(Ver.9A).pdf" H 5250 5125 50  0001 L CNN
-	1    5750 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Display_Character:KCSA02-123 U4
-U 1 1 5EED5894
-P 6750 4650
-F 0 "U4" H 6750 5317 50  0000 C CNN
-F 1 "KCSA02-123" H 6750 5226 50  0000 C CNN
-F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 6750 4050 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSA02-123(Ver.9A).pdf" H 6250 5125 50  0001 L CNN
-	1    6750 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 2750 6050 4950
 Connection ~ 5100 2350
 Wire Wire Line
-	5100 2350 6050 2350
+	5100 2350 5600 2350
 Entry Bus Bus
 	4100 5300 4200 5400
 Entry Wire Line
@@ -327,62 +299,6 @@ Wire Wire Line
 	4000 3350 3700 3350
 Wire Wire Line
 	4000 3850 3700 3850
-Entry Bus Bus
-	5200 5300 5300 5400
-Entry Bus Bus
-	6200 5300 6300 5400
-Wire Wire Line
-	7050 2750 7050 4950
-Wire Wire Line
-	6600 2750 7050 2750
-Entry Wire Line
-	5200 4350 5300 4450
-Entry Wire Line
-	5200 4250 5300 4350
-Entry Wire Line
-	5200 4450 5300 4550
-Entry Wire Line
-	5200 4550 5300 4650
-Entry Wire Line
-	5200 4850 5300 4950
-Entry Wire Line
-	5200 4750 5300 4850
-Entry Wire Line
-	5200 4650 5300 4750
-Entry Wire Line
-	5200 4950 5300 5050
-Wire Wire Line
-	5300 4350 5450 4350
-Wire Wire Line
-	5450 4450 5300 4450
-Wire Wire Line
-	5300 4550 5450 4550
-Wire Wire Line
-	5450 4650 5300 4650
-Wire Wire Line
-	5300 4750 5450 4750
-Wire Wire Line
-	5450 4850 5300 4850
-Wire Wire Line
-	5300 4950 5450 4950
-Wire Wire Line
-	5450 5050 5300 5050
-Text Label 5350 4350 0    50   ~ 0
-a
-Text Label 5350 4450 0    50   ~ 0
-b
-Text Label 5350 4550 0    50   ~ 0
-c
-Text Label 5350 4650 0    50   ~ 0
-d
-Text Label 5350 4750 0    50   ~ 0
-e
-Text Label 5350 4850 0    50   ~ 0
-f
-Text Label 5350 4950 0    50   ~ 0
-g
-Text Label 5350 5050 0    50   ~ 0
-dp
 Entry Wire Line
 	4100 4350 4200 4450
 Entry Wire Line
@@ -399,22 +315,6 @@ Entry Wire Line
 	4100 4650 4200 4750
 Entry Wire Line
 	4100 4950 4200 5050
-Wire Wire Line
-	4200 4350 4350 4350
-Wire Wire Line
-	4350 4450 4200 4450
-Wire Wire Line
-	4200 4550 4350 4550
-Wire Wire Line
-	4350 4650 4200 4650
-Wire Wire Line
-	4200 4750 4350 4750
-Wire Wire Line
-	4350 4850 4200 4850
-Wire Wire Line
-	4200 4950 4350 4950
-Wire Wire Line
-	4350 5050 4200 5050
 Text Label 4250 4350 0    50   ~ 0
 a
 Text Label 4250 4450 0    50   ~ 0
@@ -431,71 +331,19 @@ Text Label 4250 4950 0    50   ~ 0
 g
 Text Label 4250 5050 0    50   ~ 0
 dp
-Entry Wire Line
-	6200 4350 6300 4450
-Entry Wire Line
-	6200 4250 6300 4350
-Entry Wire Line
-	6200 4450 6300 4550
-Entry Wire Line
-	6200 4550 6300 4650
-Entry Wire Line
-	6200 4850 6300 4950
-Entry Wire Line
-	6200 4750 6300 4850
-Entry Wire Line
-	6200 4650 6300 4750
-Entry Wire Line
-	6200 4950 6300 5050
-Wire Wire Line
-	6300 4350 6450 4350
-Wire Wire Line
-	6450 4450 6300 4450
-Wire Wire Line
-	6300 4550 6450 4550
-Wire Wire Line
-	6450 4650 6300 4650
-Wire Wire Line
-	6300 4750 6450 4750
-Wire Wire Line
-	6450 4850 6300 4850
-Wire Wire Line
-	6300 4950 6450 4950
-Wire Wire Line
-	6450 5050 6300 5050
-Text Label 6350 4350 0    50   ~ 0
+Text Label 3750 3050 0    50   ~ 0
 a
-Text Label 6350 4450 0    50   ~ 0
-b
-Text Label 6350 4550 0    50   ~ 0
-c
-Text Label 6350 4650 0    50   ~ 0
-d
-Text Label 6350 4750 0    50   ~ 0
-e
-Text Label 6350 4850 0    50   ~ 0
-f
-Text Label 6350 4950 0    50   ~ 0
-g
-Text Label 6350 5050 0    50   ~ 0
-dp
-Wire Wire Line
-	5100 4950 4950 4950
-Wire Wire Line
-	5100 4950 5100 2750
-Text Label 3700 3750 0    50   ~ 0
-a
-Text Label 3700 3850 0    50   ~ 0
-b
-Text Label 3700 3050 0    50   ~ 0
-c
-Text Label 3700 2950 0    50   ~ 0
-d
 Text Label 2200 2850 0    50   ~ 0
+b
+Text Label 3950 3350 0    50   ~ 0
+c
+Text Label 3800 3850 0    50   ~ 0
+d
+Text Label 3700 3750 0    50   ~ 0
 e
-Text Label 3700 3350 0    50   ~ 0
+Text Label 3750 2950 0    50   ~ 0
 f
-Text Label 3700 3250 0    50   ~ 0
+Text Label 3800 3250 0    50   ~ 0
 g
 $Comp
 L Device:Rotary_Encoder_Switch SW1
@@ -594,24 +442,11 @@ OPTO
 Wire Wire Line
 	2550 6900 2150 6900
 Wire Wire Line
-	6300 2950 6300 2550
+	5750 2900 5750 2550
 Wire Wire Line
-	6300 3250 6300 3650
+	5750 3200 5750 3450
 Wire Wire Line
-	4550 2850 4550 3650
-Wire Wire Line
-	5800 3450 5800 3650
-$Comp
-L Display_Character:KCSA02-123 U2
-U 1 1 5EED545F
-P 4650 4650
-F 0 "U2" H 4650 5317 50  0000 C CNN
-F 1 "KCSA02-123" H 4650 5226 50  0000 C CNN
-F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 4650 4050 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSA02-123(Ver.9A).pdf" H 4150 5125 50  0001 L CNN
-	1    4650 4650
-	1    0    0    -1  
-$EndComp
+	4550 2850 4550 3500
 $Comp
 L Connector:Conn_01x02_Female J3
 U 1 1 5EF4A07A
@@ -681,14 +516,6 @@ $EndComp
 Wire Wire Line
 	3150 3550 4650 3550
 Wire Wire Line
-	3150 3650 4550 3650
-Wire Wire Line
-	4200 3450 5800 3450
-Wire Wire Line
-	4200 3500 4200 3450
-Wire Wire Line
-	3250 3500 4200 3500
-Wire Wire Line
 	3150 3450 3250 3450
 Wire Wire Line
 	3250 3450 3250 3500
@@ -699,7 +526,7 @@ L Device:R R9
 U 1 1 5EF8C27B
 P 3350 2950
 F 0 "R9" V 3250 2950 50  0000 C CNN
-F 1 "220" V 3250 3050 50  0000 C CNN
+F 1 "220" V 3350 2950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3280 2950 50  0001 C CNN
 F 3 "~" H 3350 2950 50  0001 C CNN
 	1    3350 2950
@@ -710,7 +537,7 @@ L Device:R R12
 U 1 1 5EF8C48C
 P 3550 3050
 F 0 "R12" V 3450 3050 50  0000 C CNN
-F 1 "220" V 3450 3150 50  0000 C CNN
+F 1 "220" V 3550 3050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 3050 50  0001 C CNN
 F 3 "~" H 3550 3050 50  0001 C CNN
 	1    3550 3050
@@ -721,7 +548,7 @@ L Device:R R10
 U 1 1 5EF8C4DE
 P 3350 3250
 F 0 "R10" V 3250 3250 50  0000 C CNN
-F 1 "220" V 3250 3350 50  0000 C CNN
+F 1 "220" V 3350 3250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3280 3250 50  0001 C CNN
 F 3 "~" H 3350 3250 50  0001 C CNN
 	1    3350 3250
@@ -731,8 +558,8 @@ $Comp
 L Device:R R13
 U 1 1 5EF8C532
 P 3550 3350
-F 0 "R13" V 3450 3350 50  0000 C CNN
-F 1 "220" V 3450 3450 50  0000 C CNN
+F 0 "R13" V 3450 3250 50  0000 C CNN
+F 1 "220" V 3550 3350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 3350 50  0001 C CNN
 F 3 "~" H 3550 3350 50  0001 C CNN
 	1    3550 3350
@@ -743,7 +570,7 @@ L Device:R R11
 U 1 1 5EF8C5A1
 P 3350 3750
 F 0 "R11" V 3250 3750 50  0000 C CNN
-F 1 "220" V 3250 3850 50  0000 C CNN
+F 1 "220" V 3350 3750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3280 3750 50  0001 C CNN
 F 3 "~" H 3350 3750 50  0001 C CNN
 	1    3350 3750
@@ -753,8 +580,8 @@ $Comp
 L Device:R R14
 U 1 1 5EF8C5FF
 P 3550 3850
-F 0 "R14" V 3450 3850 50  0000 C CNN
-F 1 "220" V 3450 3950 50  0000 C CNN
+F 0 "R14" V 3450 3700 50  0000 C CNN
+F 1 "220" V 3550 3850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 3850 50  0001 C CNN
 F 3 "~" H 3550 3850 50  0001 C CNN
 	1    3550 3850
@@ -801,14 +628,58 @@ Wire Wire Line
 	2150 2750 2200 2750
 Wire Wire Line
 	2200 2750 2200 2950
+$Comp
+L marcin_schematic:SM410363 D2
+U 1 1 5EF29973
+P 4950 4250
+F 0 "D2" H 6127 3928 50  0000 L CNN
+F 1 "SM410363" H 6127 3837 50  0000 L CNN
+F 2 "ebay_modules:SM410363" H 5300 4150 50  0001 C CNN
+F 3 "" H 5300 4150 50  0001 C CNN
+	1    4950 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4150 6050 4150
+Wire Wire Line
+	6050 4150 6050 2750
+Wire Wire Line
+	4200 3450 5750 3450
+Connection ~ 5600 2350
+Wire Wire Line
+	5600 2350 6050 2350
+Wire Wire Line
+	5600 2750 5600 4150
+Wire Wire Line
+	5100 2750 5100 4150
+Wire Wire Line
+	5100 4150 5250 4150
+Wire Wire Line
+	4200 4350 4850 4350
+Wire Wire Line
+	4200 4450 4850 4450
+Wire Wire Line
+	4200 4550 4850 4550
+Wire Wire Line
+	4200 4650 4850 4650
+Wire Wire Line
+	4200 4750 4850 4750
+Wire Wire Line
+	4200 4850 4850 4850
+Wire Wire Line
+	4200 4950 4850 4950
+Wire Wire Line
+	4200 5050 4850 5050
+Wire Wire Line
+	4200 3650 3150 3650
+Wire Wire Line
+	4200 3450 4200 3650
+Wire Wire Line
+	3250 3500 4550 3500
 Wire Bus Line
 	2100 2800 2100 5400
 Wire Bus Line
-	2650 5400 6550 5400
-Wire Bus Line
-	5200 4250 5200 5300
-Wire Bus Line
-	6200 4250 6200 5300
+	2100 5400 4300 5400
 Wire Bus Line
 	4100 2850 4100 5300
 $EndSCHEMATC
