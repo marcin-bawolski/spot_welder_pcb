@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:spot_welder-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -157,7 +156,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 6250 2550 6300
 $Comp
-L marcin_schematic:Stm8S103F6_module U1
+L marcin_kicad_sch:Stm8S103F6_module U1
 U 1 1 5EED1B37
 P 2450 2950
 F 0 "U1" H 2750 3218 50  0000 C CNN
@@ -629,7 +628,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 2750 2200 2950
 $Comp
-L marcin_schematic:SM410363 D2
+L marcin_kicad_sch:SM410363 D2
 U 1 1 5EF29973
 P 4950 4250
 F 0 "D2" H 6127 3928 50  0000 L CNN
